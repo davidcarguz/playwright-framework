@@ -9,3 +9,9 @@ test('successful login', async ({ page }) => {
     await loginPage.loginWithCredentials('standard_user','secret_sauce');
     await expect(productsPage.getTitle()).toContainText('Products')
 })
+
+test('wrong username login', async ({ page }) => {
+    const loginPage: LoginPage = new LoginPage(page);
+    await loginPage.loginWithCredentials('standard_error','secret_sauce');
+    await expect(loginPage.getLoginErrorMessage()).toContainText('Epic sadface: Username and password do not match any user in this service');
+})
