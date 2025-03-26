@@ -10,13 +10,12 @@
       "resolveJsonModule": true,
       "baseUrl": ".",
       "paths": {
-        "*": ["*", "src/*"]
+        "*": ["*", "tests/*"]
       }
     },
     "include": [
-      "steps/**/*.ts",
-      "src/**/*.ts",
-      "features/**/*.ts"
+      "tests/steps/**/*.ts",
+      "tests/features/**/*.ts",
     ],
     "exclude": [
       "node_modules"

@@ -1,8 +1,8 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { page } from './world';
 import { expect } from '@playwright/test';
-import LoginPage from '../src/pages/login-page';
-import ProductsPage from '../src/pages/products-page';
+import LoginPage from '../pages/login-page'
+import ProductsPage from '../pages/products-page';
 
 Given('Demo step', async () => {
     const loginPage: LoginPage = new LoginPage(page);
