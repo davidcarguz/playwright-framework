@@ -9,16 +9,5 @@
       "moduleResolution": "node",
       "resolveJsonModule": true,
       "baseUrl": ".",
-      "paths": {
-        "*": ["tests/*"]
-      }
-    },
-    "include": [
-      "tests/steps/*.ts",
-      "tests/steps/**/*.ts",
-      "tests/features/*.feature",
-    ],
-    "exclude": [
-      "node_modules"
-    ]
+    }
   }
