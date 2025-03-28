@@ -14,8 +14,9 @@
       }
     },
     "include": [
+      "tests/steps/*.ts",
       "tests/steps/**/*.ts",
-      "tests/features/**/*.ts",
+      "tests/features/*.feature",
     ],
     "exclude": [
       "node_modules"

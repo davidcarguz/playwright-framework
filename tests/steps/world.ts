@@ -11,6 +11,7 @@ Before(async () => {
         browser = await chromium.launch({headless: false});
         const context = await browser.newContext();
         page = await context.newPage();
+        await page.goto('https://www.saucedemo.com/');
     }catch(error) {
         throw new Error(`browser couldn't be initialized due to error: ${error}` );
     }
